@@ -5,13 +5,13 @@
     --color-accent-dark: #bf8e68;
     --color-shadow: rgba(0, 0, 0, 0.1);
 
-    --spacing-small: 16px;
-    --spacing-medium: 32px;
-    --spacing-large: 64px;
+    --spacing-s: 16px;
+    --spacing-m: 32px;
+    --spacing-l: 64px;
 
-    --border-radius-small: 16px;
-    --border-radius-medium: 32px;
-    --border-radius-large: 64px;
+    --border-radius-s: 16px;
+    --border-radius-m: 32px;
+    --border-radius-l: 64px;
 
     --font-size-xl: 2rem;
     --font-size-l: 1.5rem;
@@ -19,6 +19,7 @@
     --font-size-s: 0.5rem;
 
     --nav-width: 10%;
+    --nav-width-min: 75px;
 }
 
 body {
@@ -34,7 +35,7 @@ main {
     width: calc(100% - var(--nav-width));
     height: 100%;
 
-    border-radius: var(--border-radius-large) 0px 0px var(--border-radius-large);
+    border-radius: var(--border-radius-l) 0px 0px var(--border-radius-l);
     background-color: var(--color-backdrop);
     box-shadow: -5px 0px 5px var(--color-shadow);
 }
@@ -53,4 +54,16 @@ main {
 
 .brown {
     color: var(--color-accent-dark);
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-flow: column;
+    }
+
+    main {
+        width: 100%;
+        height: calc(100% - var(--nav-width));
+        border-radius: var(--border-radius-l) var(--border-radius-l) 0px 0px;
+    }
 }

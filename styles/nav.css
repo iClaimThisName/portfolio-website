@@ -1,4 +1,35 @@
 .nav-container {
+    display: flex;
+    position: sticky;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    min-width: var(--nav-width-min);
     width: var(--nav-width);
     height: 100%;
+
+    gap: var(--spacing-l);
+}
+
+.nav-item {
+    width: 80%;
+    margin-inline: auto;
+    aspect-ratio: 1/1;
+    background-color: red;
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-flow: row;
+        width: 100%;
+        height: var(--nav-width);
+        align-items: center;
+        gap: var(--spacing-m);
+    }
+
+    .nav-item {
+        width: unset;
+        height: 80%;
+        margin-inline: 0px;
+    }
 }
