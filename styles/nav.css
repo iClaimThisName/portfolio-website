@@ -1,0 +1,4 @@
+.nav-container {
+    width: var(--nav-width);
+    height: 100%;
+}
