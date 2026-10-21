@@ -1,3 +1,23 @@
+:root {
+    --color-backdrop: #f0f0f0;
+    --color-backdrop-dark: #6cb1c9;
+    --color-accent: #ffdeaa;
+    --color-accent-dark: #bf8e68;
+
+    --spacing-small: 16px;
+    --spacing-medium: 32px;
+    --spacing-large: 64px;
+
+    --border-radius-small: 16px;
+    --border-radius-medium: 32px;
+    --border-radius-large: 64px;
+
+    --font-size-xl: 2rem;
+    --font-size-l: 1.5rem;
+    --font-size-m: 1rem;
+    --font-size-s: 0.5rem;
+}
+
 body {
     margin: 0;
     height: 100vh;
