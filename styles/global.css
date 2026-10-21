@@ -16,7 +16,7 @@
     --font-size-xl: 2rem;
     --font-size-l: 1.5rem;
     --font-size-m: 1rem;
-    --font-size-s: 0.5rem;
+    --font-size-s: 0.8rem;
 
     --nav-width: 10%;
     --nav-width-min: 75px;
@@ -40,6 +40,10 @@ main {
     box-shadow: -5px 0px 5px var(--color-shadow);
 }
 
+a {
+    text-decoration: none;
+}
+
 .white {
     color: var(--color-backdrop);
 }
@@ -58,6 +62,7 @@ main {
 
 @media (max-width: 600px) {
     body {
+        position: relative;
         flex-flow: column;
     }
 
