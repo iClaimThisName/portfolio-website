@@ -1,8 +1,8 @@
 :root {
-    --color-backdrop: #f0f0f0;
-    --color-backdrop-dark: #6cb1c9;
-    --color-accent: #ffdeaa;
-    --color-accent-dark: #bf8e68;
+    --color-backdrop: #f6f1fa;
+    --color-backdrop-dark: #0a62bd;
+    --color-accent: #87d1f5;
+    --color-accent-dark: #5fec65;
     --color-shadow: rgba(0, 0, 0, 0.1);
 
     --spacing-s: 16px;
@@ -22,9 +22,14 @@
     --nav-width-min: 75px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     margin: 0;
+    padding: 0;
     height: 100vh;
     width: 100vw;
 
@@ -37,7 +42,7 @@ main {
 
     border-radius: var(--border-radius-l) 0px 0px var(--border-radius-l);
     background-color: var(--color-backdrop);
-    box-shadow: -5px 0px 5px var(--color-shadow);
+    box-shadow: 5px 0px 5px var(--color-shadow);
 }
 
 a {
@@ -70,5 +75,6 @@ a {
         width: 100%;
         height: calc(100% - var(--nav-width));
         border-radius: var(--border-radius-l) var(--border-radius-l) 0px 0px;
+        box-shadow: inset 0px 5px 5px var(--color-shadow);
     }
 }

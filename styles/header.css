@@ -1,0 +1,9 @@
+.header {
+    width: 100%;
+    height: 30vh;
+
+    background-color: var(--color-accent-dark);
+    border-radius: var(--border-radius-l) 0px 0px 0px;
+    border-left: solid var(--spacing-s) var(--color-backdrop);
+    border-top: solid var(--spacing-s) var(--color-backdrop);
+}
