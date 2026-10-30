@@ -24,6 +24,11 @@
 .nav-icon {
     width: 100%;
     aspect-ratio: 1/1;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        transform: rotateZ(10deg);
+    }
 }
 
 .nav-text {
