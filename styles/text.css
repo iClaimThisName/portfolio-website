@@ -1,0 +1,26 @@
+.title {
+    font-family: billo;
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: var(--color-accent);
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: var(--color-accent-dark);
+}
+
+.text {
+    font-size: 1rem;
+    color: var(--color-accent);
+}
+
+.center {
+    text-align: center;
+}
+
+.divider {
+    height: 0px;
+    width: 100%;
+    border-top: 2px dotted;
+}

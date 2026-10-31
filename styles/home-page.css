@@ -6,10 +6,39 @@
     height: 100%;
     padding: var(--spacing-s);
     flex-shrink: 1;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template: 2fr 1fr 3fr 1fr / 3fr repeat(3, 2fr);
     gap: var(--spacing-s);
 }
 
+.about-container {
+    grid-area: span 3;
+    position: relative;
+    height: 85%;
+    align-self: end;
+    border-radius: var(--spacing-s);
+    background-color: var(--color-accent);
+}
+
+.about-icon {
+    position: absolute;
+    justify-self: center;
+    inset: 0;
+    top: -50px;
+    height: 100px;
+    aspect-ratio: 1/1;
+
+    border: 4px dotted var(--color-accent);
+    border-radius: 50%;
+}
+
+.project-title {
+    grid-area: 2 / 2 / span 1 / span 3;
+    background-color: var(--color-accent);
+}
+
 .project-container {
+    grid-area: span 2;
+    height: 90%;
+    border-radius: var(--spacing-s);
     background-color: var(--color-accent);
 }
