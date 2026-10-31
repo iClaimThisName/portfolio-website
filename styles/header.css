@@ -5,6 +5,7 @@
 
     background-color: var(--color-accent-dark);
     background-image: url(../images/stars_temp.jpg);
+    background-size: cover;
     opacity: 0.8;
     border-radius: var(--border-radius-l) 0px 0px 0px;
     border-left: solid var(--spacing-s) var(--color-backdrop);

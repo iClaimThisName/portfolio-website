@@ -92,6 +92,6 @@
     }
 
     .logo {
-        width: var(----nav-width-min);
+        width: var(--nav-width-min);
     }
 }

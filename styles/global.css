@@ -64,11 +64,11 @@ a {
     color: var(--color-backdrop-dark);
 }
 
-.yellow {
+.light-blue {
     color: var(--color-accent);
 }
 
-.brown {
+.green {
     color: var(--color-accent-dark);
 }
 

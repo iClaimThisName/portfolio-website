@@ -17,6 +17,9 @@
     align-self: end;
     border-radius: var(--spacing-s);
     background-color: var(--color-accent);
+
+    border: solid 8px var(--color-backdrop-dark);
+    border-style: outset;
 }
 
 .about-icon {
@@ -27,13 +30,24 @@
     height: 100px;
     aspect-ratio: 1/1;
 
-    border: 4px dotted var(--color-accent);
-    border-radius: 50%;
+    &.border-top {
+        border-top: 4px dotted var(--color-accent);
+        border-left: 4px dotted var(--color-accent);
+        border-radius: 50%;
+        transform: rotateZ(45deg);
+    }
+
+    &.border-bottom {
+        border-bottom: 4px dotted var(--color-backdrop);
+        border-right: 4px dotted var(--color-backdrop);
+        border-radius: 50%;
+        transform: rotateZ(45deg);
+    }
 }
 
 .project-title {
     grid-area: 2 / 2 / span 1 / span 3;
-    background-color: var(--color-accent);
+    align-self: end;
 }
 
 .project-container {
@@ -41,4 +55,11 @@
     height: 90%;
     border-radius: var(--spacing-s);
     background-color: var(--color-accent);
+    background: linear-gradient(
+        var(--color-backdrop) 0%,
+        var(--color-accent) 100%
+    );
+
+    border: solid 8px var(--color-accent);
+    border-style: outset;
 }
