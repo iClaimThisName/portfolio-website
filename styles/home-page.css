@@ -16,10 +16,10 @@
     height: 85%;
     align-self: end;
     border-radius: var(--spacing-s);
-    background-color: var(--color-accent);
-
-    border: solid 8px var(--color-backdrop-dark);
-    border-style: outset;
+    background: linear-gradient(
+        var(--color-accent) 0%,
+        var(--color-backdrop-dark) 100%
+    );
 }
 
 .about-icon {
@@ -54,12 +54,8 @@
     grid-area: span 2;
     height: 90%;
     border-radius: var(--spacing-s);
-    background-color: var(--color-accent);
     background: linear-gradient(
         var(--color-backdrop) 0%,
         var(--color-accent) 100%
     );
-
-    border: solid 8px var(--color-accent);
-    border-style: outset;
 }
