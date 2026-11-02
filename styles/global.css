@@ -1,8 +1,8 @@
 :root {
     --color-backdrop: #f6f1fa;
-    --color-backdrop-dark: #0a62bd;
-    --color-accent: #87d1f5;
-    --color-accent-dark: #5fec65;
+    --color-backdrop-dark: #2970bb;
+    --color-accent: #95d4f3;
+    --color-accent-dark: #9be99f;
     --color-shadow: rgba(0, 0, 0, 0.1);
 
     --spacing-s: 16px;
@@ -45,7 +45,8 @@ main {
     display: flex;
     flex-direction: column;
     width: calc(100% - var(--nav-width));
-    height: 100%;
+    min-height: 100vh;
+    height: fit-content;
 
     border-radius: var(--border-radius-l) 0px 0px var(--border-radius-l);
     background-color: var(--color-backdrop);

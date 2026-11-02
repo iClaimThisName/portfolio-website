@@ -1,7 +1,7 @@
 .header {
     display: flex;
     width: 100%;
-    min-height: 30%;
+    min-height: 200px;
 
     background-color: var(--color-accent-dark);
     background-image: url(../images/stars_temp.jpg);
