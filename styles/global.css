@@ -20,6 +20,8 @@
 
     --nav-width: 10%;
     --nav-width-min: 75px;
+
+    --header-height: 200px;
 }
 
 * {
@@ -31,11 +33,16 @@
     src: url(../fonts/billo.TTF);
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     display: flex;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 
     background-color: var(--color-backdrop-dark);
@@ -45,8 +52,7 @@ main {
     display: flex;
     flex-direction: column;
     width: calc(100% - var(--nav-width));
-    min-height: 100vh;
-    height: fit-content;
+    height: 100%;
 
     border-radius: var(--border-radius-l) 0px 0px var(--border-radius-l);
     background-color: var(--color-backdrop);
